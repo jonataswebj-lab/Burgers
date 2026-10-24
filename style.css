@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Libertinus+Math&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background-color: #F5E8DB;
+    display: grid;
+    grid-template-columns: 210px minmax(0, 1fr);
+    align-items: center;
+    gap: 20px;
+    min-height: 100vh;
+    padding: 0 20px 20px;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    font-family: 'Gravitas One', cursive;
+    color: #E77A53;
+    text-align: left;
+    font-size: clamp(1.5rem, 5vw, 50px);
+    margin: 0 -20px;
+    padding: 30px;
+    min-height: 300px;
+    background:
+        linear-gradient(90deg, rgb(0 0 0 / 58%), rgb(0 0 0 / 12%)),
+        url("./img/mcDonals.png") center / cover no-repeat;
+    cursor:context-menu;
+}
+
+.burger {
+    font-family: 'Gravitas One', cursive;
+    font-weight: 700;
+    color: #602D19;
+}
+
+.mc {
+    font-family: 'Gravitas One', cursive;
+    font-weight: 700;
+    color: #FDBB03;
+}
+
+.flavor {
+    font-family: 'Gravitas One', cursive;
+    font-weight: 700;
+    color: #E77A53;
+}
+
+.brazil {
+    font-family: 'Gravitas One', cursive;
+    font-weight: 700;
+    color: #00A859;
+}
+
+.container {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    color: #000000;
+    background-color: #ffff;
+    border: 2.5px solid #E77A53;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 19px;
+    box-shadow: 0px 0px 5px #000000;
+    width: 180px;
+    height: 180px;
+}
+
+.section-button {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.show-all {
+    background-image:
+        linear-gradient(rgb(255 255 255 / 78%), rgb(255 255 255 / 78%)),
+        url("./img/x-bacon.png");
+}
+
+.filter-all {
+    background-image:
+        linear-gradient(rgb(255 255 255 / 78%), rgb(255 255 255 / 78%)),
+        url("./img/x-vegan.png");
+}
+
+.drinks-all {
+    background-image:
+        linear-gradient(rgb(255 255 255 / 78%), rgb(255 255 255 / 78%)),
+        url("./img/coca-cola.png");
+}
+
+.desserts-all {
+    background-image:
+        linear-gradient(rgb(255 255 255 / 78%), rgb(255 255 255 / 78%)),
+        url("./img/casquinha.png");
+}
+
+.map-all {
+    background-image:
+        linear-gradient(rgb(255 255 255 / 78%), rgb(255 255 255 / 78%)),
+        url("./img/pix.png");
+}
+
+.sum-all {
+    background-image:
+        linear-gradient(rgb(255 255 255 / 78%), rgb(255 255 255 / 78%)),
+        url("./img/money.png");
+}
+
+button:hover {
+    opacity: .8;
+}
+
+button:active {
+    opacity: .9;
+}
+
+ul {
+    grid-column: 2;
+    grid-row: 2;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+}
+
+.next-step {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+    height: auto;
+    min-height: 56px;
+    padding: 12px 20px;
+    color: #ffffff;
+    background-color: #00A859;
+    border: 0;
+    font-size: 16px;
+}
+
+li {
+    border: 2px solid #E77A53;
+}
+
+li[data-product-name] {
+    cursor: pointer;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+li[data-product-name]:hover {
+    transform: translateY(-3px);
+}
+
+li[data-product-name]:focus-visible {
+    outline: 3px solid #602D19;
+    outline-offset: 3px;
+}
+
+li[data-product-name].selected {
+    box-shadow: 0 0 0 4px #00A859;
+}
+
+img {
+    width: 100%;
+    padding: 3px;
+}
+
+p {
+    color: #000000;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.discount-value {
+    color: #d00000;
+    box-shadow: 0px 2px 0px #d00000;
+}
+
+.cart-summary {
+    grid-column: 1 / -1;
+    width: min(100%, 600px);
+    justify-self: center;
+    padding: 16px;
+}
+
+.cart-heading,
+.cart-total {
+    font-size: 1.2rem;
+}
+
+.payment-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 12px 5px;
+    padding: 10px;
+    border: 1px solid #E77A53;
+}
+
+.payment-options label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.pix-total {
+    font-size: 1.2rem;
+    color: #00A859;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 1px solid #E77A53;
+}
+
+.empty-cart {
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    ul {
+        grid-template-columns: repeat(2, minmax(140px, 200px));
+        gap: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        grid-column: 1;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 180px));
+        justify-content: center;
+        gap: 12px;
+    }
+
+    button {
+        width: 100%;
+        height: 120px;
+        font-size: 16px;
+    }
+
+    ul {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .next-step {
+        grid-column: 1;
+        grid-row: 4;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 420px) {
+    ul {
+        grid-template-columns: minmax(0, 200px);
+    }
+}
