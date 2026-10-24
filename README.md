@@ -1,5 +1,5 @@
 <h1 align="center">Burger</h1>
-<img src="https://github.com/jonataswebj-lab/Jokenpo/blob/main/projeto_imagem.png?raw=true" width=800px alt="imagem-projeto-jokenpo" />
+<img src="https://github.com/jonataswebj-lab/Burgers/blob/main/img/img-projeto.png?raw=true" width=800px alt="imagem-projeto-burger" />
 <br>
 <h3 align="center">Tecnologias Utilizadas:</h3>
 <br>
