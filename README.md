@@ -3,10 +3,11 @@
 <br>
 <h3 align="center">Tecnologias Utilizadas:</h3>
 <br>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/250px-HTML5_logo_and_wordmark.svg.png" alt="html-logo" width=120px />
-<img src="https://blog.leonhassan.co.uk/content/images/2019/09/css3.svg" alt="css-logo" width=135px />
-<br>
-<img src="https://www.w3schools.com/whatis/img_js.png" alt="javascript-logo" width=80px />
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
 <br>
 
 <a href="https://jonataswebj-lab.github.io/Burgers/">Site Burger</a>
